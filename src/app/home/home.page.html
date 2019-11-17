@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Home Page
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="home">
+    <form #form="ngForm" method="POST">
+      <ion-row>
+        <ion-input class="input" [(ngModel)]="modelName.form" name="name" type="text" placeholder="Enter Name"></ion-input>
+      </ion-row>
+      <br>
+
+      <ion-row>
+        <ion-input class= "input" [(ngModel)]="modelUsername.form" name="username" type="text" placeholder="Username"></ion-input>
+      </ion-row>
+      <br>
+      
+      <ion-row>
+        <ion-input class="input" [(ngModel)]="modelAge.form" name="age" type="number" placeholder="Enter Age"></ion-input>
+      </ion-row>
+      <br>
+
+      <ion-row>
+        <ion-input class="input" [(ngModel)]="modelEmail.form" name="email" type="email" placeholder="Enter Email"></ion-input>
+      </ion-row>
+      <br>
+
+      <ion-row>
+        <ion-input class="input" [(ngModel)]="modelPassword.form" name="password" type="password" placeholder="Enter Password"></ion-input>
+      </ion-row>
+      <br>
+
+      <ion-row>
+        <ion-button class="button" color="primary" expend="full" (click)="submit(form)">Submit</ion-button>
+      </ion-row>
+    </form>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start">
+      <ion-back-button defaultHref="/">
+        </ion-back-button>
+    </ion-button>
+    <ion-title>About {{this.username}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{this.name}}</ion-card-title>
+      <ion-card-subtitle>{{this.email}}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Age is {{this.age}} years old and the password that entered is <i>{{this.password}}</i>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
